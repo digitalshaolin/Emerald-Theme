@@ -1,16 +1,29 @@
 .header {
     background-color: #000;
     color: #fff;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
     &-container {
         display: flex;
-        &-logo {
-    
+    }
+    &-logo {
+        display: flex;
+        align-items: center;
+    }
+    &-nav {
+        .navbar {
+            &-nav {
+                .nav-link {
+                    color: #fff;
+                }
+            }
         }
-        &-nav {
-    
-        }
-        &-cart {
-    
-        }
+    }
+    &-cart {
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
     }
 }
