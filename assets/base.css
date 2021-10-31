@@ -16,6 +16,12 @@
 .header-nav .navbar-nav .nav-link {
   color: #fff;
 }
+.header-nav .navbar-nav .nav-item .dropdown-item {
+  color: #000;
+}
+.header-nav .navbar .offcanvas.show .nav-link {
+  color: #000;
+}
 .header-cart {
   margin: 0 0 0 auto;
   display: flex;

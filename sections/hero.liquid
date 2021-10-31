@@ -1,0 +1,43 @@
+<section class="hero">
+    <p>This is a hero section</p>
+</section>
+
+{% schema %}
+{
+    "name": "Hero",
+    "class": "hero-section",
+    "settings": [
+        {
+            "type": "url",
+            "id": "main_url",
+            "label": "Main section link"
+        },
+        {
+            "type": "text",
+            "id": "button_1_text",
+            "label": "Main button text."
+        },
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Main left image"
+        },
+        {
+            "type": "text",
+            "id": "heading_1",
+            "label": "Main heading."
+        },
+        {
+            "type": "text",
+            "id": "subheading_1",
+            "label": "Main sub-heading."
+        }
+    ],
+    "presets": [
+         {
+            "name": "Hero with 3 image grid"
+         }
+    ]
+
+}
+{% endschema %}

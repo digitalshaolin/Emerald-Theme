@@ -18,6 +18,16 @@
                 .nav-link {
                     color: #fff;
                 }
+                .nav-item {
+                    .dropdown-item {
+                        color: #000;
+                    }
+                }
+            }
+            .offcanvas.show {
+                .nav-link {
+                    color: #000;
+                }
             }
         }
     }
