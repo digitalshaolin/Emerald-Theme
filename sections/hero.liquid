@@ -1,5 +1,9 @@
 <section class="hero">
     <p>This is a hero section</p>
+    <p>{{ section.settings.top_right_subheading }}</p>
+    <p>{{ section.settings.main_url }}</p>
+    <p>{{ section.settings.image_1 | img_url }}</p>
+    <img src="{{ section.settings.image_1 | img_url: 'grande' }}" alt="">
 </section>
 
 {% schema %}
@@ -31,6 +35,46 @@
             "type": "text",
             "id": "subheading_1",
             "label": "Main sub-heading."
+        },
+        {
+            "type": "text",
+            "id": "top_right_heading",
+            "label": "Top right grid heading."
+        },
+        {
+            "type": "richtext",
+            "id": "top_right_subheading",
+            "label": "Top right grid subheading."
+        },
+        {
+            "type": "url",
+            "id": "top_right_link",
+            "label": "Top right grid link."
+        },
+        {
+            "type": "image_picker",
+            "id": "top_right_image",
+            "label": "Top right grid image."
+        },
+        {
+            "type": "text",
+            "id": "bottom_right_heading",
+            "label": "Bottom right grid heading."
+        },
+        {
+            "type": "richtext",
+            "id": "bottom_right_subheading",
+            "label": "Bottom right grid subheading."
+        },
+        {
+            "type": "url",
+            "id": "bottom_right_link",
+            "label": "Bottom right grid link."
+        },
+        {
+            "type": "image_picker",
+            "id": "bottom_right_image",
+            "label": "Bottom right grid image."
         }
     ],
     "presets": [
