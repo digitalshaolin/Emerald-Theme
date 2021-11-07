@@ -1,0 +1,39 @@
+.homepage-hero {
+    .hero-container {
+        .hero-grid {
+            height: 64vw;
+            @media (min-aspect-ratio: 5/4) {
+                height: calc(100vh - 56px);
+            }
+            display: grid;
+            grid-template-areas: 
+                "main main second"
+                "main main third";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            &--main {                
+                grid-area: main;
+                position: relative;
+            }
+            &--upper-right {
+                grid-area: second;
+                position: relative;
+            }
+            &--lower-right {
+                grid-area: third;
+                position: relative;
+            }
+            .image {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

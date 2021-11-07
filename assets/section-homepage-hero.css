@@ -1,0 +1,34 @@
+.homepage-hero .hero-container .hero-grid {
+  height: 64vw;
+  display: grid;
+  grid-template-areas: "main main second" "main main third";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+@media (min-aspect-ratio: 5/4) {
+  .homepage-hero .hero-container .hero-grid {
+    height: calc(100vh - 56px);
+  }
+}
+.homepage-hero .hero-container .hero-grid--main {
+  grid-area: main;
+  position: relative;
+}
+.homepage-hero .hero-container .hero-grid--upper-right {
+  grid-area: second;
+  position: relative;
+}
+.homepage-hero .hero-container .hero-grid--lower-right {
+  grid-area: third;
+  position: relative;
+}
+.homepage-hero .hero-container .hero-grid .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.homepage-hero .hero-container .hero-grid .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

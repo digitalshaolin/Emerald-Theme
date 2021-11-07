@@ -1,10 +1,37 @@
-<section class="hero">
-    <p>This is a hero section</p>
-    <p>{{ section.settings.top_right_subheading }}</p>
-    <p>{{ section.settings.main_url }}</p>
-    <p>{{ section.settings.image_1 | img_url }}</p>
-    <img src="{{ section.settings.image_1 | img_url: 'grande' }}" alt="">
+{{ 'section-homepage-hero.css' | asset_url | stylesheet_tag }}
+
+<section class="homepage-hero">
+  <div class="hero-container">
+      <div class="hero-grid">
+          <div class="hero-grid--main">
+              <div class="content">
+
+              </div>
+              <div class="image">
+                <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="">
+              </div>
+          </div>
+          <div class="hero-grid--upper-right">
+               <div class="content">
+
+              </div>
+              <div class="image">
+                <img src="{{ section.settings.top_right_image | img_url: 'master' }}" alt="">
+              </div>
+          </div>
+          <div class="hero-grid--lower-right">
+               <div class="content">
+
+              </div>
+              <div class="image">
+                <img src="{{ section.settings.bottom_right_image | img_url: 'master' }}" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
+
+
 
 {% schema %}
 {
