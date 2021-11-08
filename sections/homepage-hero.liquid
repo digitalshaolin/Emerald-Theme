@@ -5,7 +5,9 @@
       <div class="hero-grid">
           <div class="hero-grid--main">
               <div class="content">
-
+                <h2>{{ section.settings.heading_1 }}</h2>
+                <p>{{ section.settings.subheading_1 }}</p>
+                <a href="{{ section.settings.main_url }}" class="primary-button">{{ section.settings.button_1_text }}</a>
               </div>
               <div class="image">
                 <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="">

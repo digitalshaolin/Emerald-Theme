@@ -3,3 +3,15 @@
 body {
     font-family: 'Roboto', sans-serif; 
 }
+
+.primary-button {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 35px;
+    &:hover {
+        color: #000;
+    }
+}

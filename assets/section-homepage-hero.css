@@ -1,3 +1,14 @@
+body {
+  color: #fff;
+}
+body h2 {
+  font-size: 2.8vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+}
+
 .homepage-hero .hero-container .hero-grid {
   height: 64vw;
   display: grid;
@@ -13,6 +24,16 @@
 .homepage-hero .hero-container .hero-grid--main {
   grid-area: main;
   position: relative;
+}
+.homepage-hero .hero-container .hero-grid--main .content {
+  width: 27vw;
+  padding: 6vw 0;
+  margin: 0 8vw;
+}
+.homepage-hero .hero-container .hero-grid--main p {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 2rem;
 }
 .homepage-hero .hero-container .hero-grid--upper-right {
   grid-area: second;
@@ -31,4 +52,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.homepage-hero .hero-container .hero-grid .content {
+  position: absolute;
+  z-index: 2;
 }
