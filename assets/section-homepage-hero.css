@@ -43,6 +43,27 @@ body h2 {
   grid-area: third;
   position: relative;
 }
+.homepage-hero .hero-container .hero-grid--lower-right .content, .homepage-hero .hero-container .hero-grid--upper-right .content {
+  padding: 45px 20px;
+  text-align: center;
+  width: 100%;
+}
+.homepage-hero .hero-container .hero-grid--lower-right h2, .homepage-hero .hero-container .hero-grid--upper-right h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.homepage-hero .hero-container .hero-grid--lower-right a, .homepage-hero .hero-container .hero-grid--upper-right a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.homepage-hero .hero-container .hero-grid--lower-right a span, .homepage-hero .hero-container .hero-grid--upper-right a span {
+  display: inline-block;
+  transition: 0.3s all;
+}
+.homepage-hero .hero-container .hero-grid--lower-right a:hover span, .homepage-hero .hero-container .hero-grid--upper-right a:hover span {
+  animation: slide-right 0.6s ease-in-out infinite;
+}
 .homepage-hero .hero-container .hero-grid .image {
   width: 100%;
   height: 100%;
@@ -56,4 +77,51 @@ body h2 {
 .homepage-hero .hero-container .hero-grid .content {
   position: absolute;
   z-index: 2;
+}
+@media (max-width: 700px) {
+  .homepage-hero .hero-container .hero-grid--main .content {
+    width: 36vw;
+  }
+}
+@media (max-width: 550px) {
+  .homepage-hero .hero-container .hero-grid {
+    display: block;
+    height: 100vh;
+  }
+  .homepage-hero .hero-container .hero-grid--child {
+    height: 100vw;
+  }
+  .homepage-hero .hero-container .hero-grid--main {
+    height: calc(100vh - 56px);
+  }
+  .homepage-hero .hero-container .hero-grid--main .content {
+    width: 100%;
+    margin: 0;
+    padding: 6vw 20px;
+  }
+  .homepage-hero .hero-container .hero-grid--main .content h2 {
+    font-size: 36px;
+  }
+  .homepage-hero .hero-container .hero-grid--main .content p {
+    font-size: 14px;
+  }
+  .homepage-hero .hero-container .hero-grid--main .content .primary-button {
+    display: block;
+    text-align: center;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
 }
